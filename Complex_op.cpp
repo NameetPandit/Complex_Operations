@@ -19,17 +19,19 @@ public:
 	}
 	void add() {
 	
-	int sum = (real1+real2+img1+img2);
-	cout<<sum<< "+" <<"i";
+	int real_sum = (real1+real2);
+	int img_sum = (img1+img2)	
+	cout<<real_sum<<"+"<<img_sum<<"i";
 }
 	void subtract() {
-		int difference= (real2-real1) + (img2-img1);
-		cout<<difference<<"+"<<"i";
+		int real_difference= (real2-real1);
+		int img_difference=(img2-img1);
+		cout<<real_difference<<"+"<<img_difference<<"i";
 	}
 	void multiply() {
 		int real_product = real1*real2 + img1*img2*-1;
 		int img_product = real1*img1 + img1*real2;
-		cout<< real_product + img_product<<"+"<<"i";
+		cout<< real_product<<"+"<<img_product<<"i";
 	}
 	
 	};
